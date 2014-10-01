@@ -1,0 +1,23 @@
+<div id="container">
+    <div class="like">
+        <img src="images/megusta.png" alt="Me Gusta">        
+    </div>
+    <div class="info">
+        <p class="titulo"><span>CONTRATA EL SOAP</span>EN MAGALLANES.CL</p>
+        <p><span>COMPARTE ESTA PROMOCIÓN CON TUS AMIGOS</span>y, si 10 de ellos también lo compran, te devolvemos el costo de tu Seguro Obligatorio.</p>
+        <form name="form" data-ng-submit="create(form)" novalidate>
+            <fieldset class="cajablanca">
+                <label>
+                    <input type="text" data-ng-model="contestant.patent" maxlength="6" required/>
+                    <button type="submit" data-ng-disabled="form.$invalid && !acept_condition">INGRESA TU PATENTE</button>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <input type="checkbox" data-ng-model="acept_condition"/>Acepto las condiciones del concurso, <a href="http://www.performancemedia.cl/clientes/magallanes/soap14/condiciones.html" title="Ver Condiciones" target="_blank">ver condiciones</a>
+                </label>
+            </fieldset>
+        </form>
+        
+    </div>
+</div>

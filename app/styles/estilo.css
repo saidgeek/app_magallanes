@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('../fonts/helveticaneue.eot');
+    src: url('../fonts/helveticaneue.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneue.woff') format('woff'),
+         url('../fonts/helveticaneue.ttf') format('truetype'),
+         url('../fonts/helveticaneue.svg#HelveticaNeueRegular') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueCondensedBold';
+    src: url('../fonts/helveticaneue-condensedbold.eot');
+    src: url('../fonts/helveticaneue-condensedbold.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneue-condensedbold.woff') format('woff'),
+         url('../fonts/helveticaneue-condensedbold.ttf') format('truetype'),
+         url('../fonts/helveticaneue-condensedbold.svg#HelveticaNeueCondensedBold') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/helveticaneue-light.eot');
+    src: url('../fonts/helveticaneue-light.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneue-light.woff') format('woff'),
+         url('../fonts/helveticaneue-light.ttf') format('truetype'),
+         url('../fonts/helveticaneue-light.svg#HelveticaNeueLight') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/helveticaneue-bold.eot');
+    src: url('../fonts/helveticaneue-bold.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneue-bold.woff') format('woff'),
+         url('../fonts/helveticaneue-bold.ttf') format('truetype'),
+         url('../fonts/helveticaneue-bold.svg#HelveticaNeueBold') format('svg');
+}
+
+
+
+form, fieldset, legend {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    font: "Arial" \9;
+}
+
+
+#container {
+    width: 790px;
+    height: 510px;
+    margin: 0 auto;
+    background: url(../images/bg.png) top left no-repeat;
+    padding-top: 170px;
+    position: relative;
+}
+#container .like {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+    background-color:rgba(0,0,0, 0.7);
+    width: 790px;
+    height: 610px;
+}
+#container .like img {
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    margin: -182px 0 0 -182px;
+}
+
+
+#container .info {
+    height:285px;
+    width:410px;
+    padding:0;
+    margin:0 0 64px 335px;
+}
+#container .info p {
+    color:#347298;
+    font:normal 16px 'HelveticaNeueLight';
+    text-align: center;
+    margin: 0;
+}
+#container .info p.titulo {
+    font:normal 42px HelveticaNeueLight;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+#container .info p.titulo span {
+    display: block;
+    font:normal 52px HelveticaNeueCondensedBold;
+}
+#container .info p span {
+    display: block;
+    font:normal 16px HelveticaNeueBold;
+}
+#container .info .cajablanca {
+    background: #fff;
+    width:375px;
+    height: 34px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 10px 0 10px 0;
+}
+#container .info fieldset label {
+    margin: 0;
+    display: block;
+    padding: 0;
+    color: #515151;
+    font:normal 12px HelveticaNeueRegular;
+}
+#container .info .cajablanca label input {
+    width: 155px;
+    height: 26px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 12px;
+    padding-left: 10px;
+}
+
+#container .info .cajablanca label button {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FDA917),
+        color-stop(1, #FC7A08)
+    );
+    background-image: -o-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: -moz-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: -webkit-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: -ms-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: linear-gradient(to bottom, #FDA917 0%, #FC7A08 100%);
+    height: 32px;
+    border: 1px solid #e49000;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    font:normal 18px HelveticaNeueCondensedBold;
+    letter-spacing: 1px;
+    background:url(../images/bg_ie.png) repeat-x top left;
+    border-radius:0 \9;
+    cursor: pointer;
+}
+
+#container .info fieldset label input[type=checkbox] {
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0 10px 0 0;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: #fff;
+    vertical-align: middle;
+}
+#container .info fieldset label a{
+    color:#347298;
+    text-decoration: none;
+}
+
+#container.paso3 {
+    background: url(../images/bg2.png) top left no-repeat;
+    padding-top: 125px;
+    height:auto;
+}
+#container.paso3 .info {
+    height: 235px;
+    margin-bottom: 0;
+}
+#container.paso3 .info p {
+    font-size: 15px;
+}
+
+#container.paso3 .info p.titulo {
+    font:normal 34px HelveticaNeueLight;
+    margin-bottom: 10px;
+    line-height: 49px;
+}
+#container.paso3 .info p.titulo span {
+    display: block;
+    font:normal 39px HelveticaNeueCondensedBold;
+    margin: 0;
+    line-height: 39px;
+}
+
+#container.paso3 p.reloj {
+    padding: 15px 20px 0 200px;
+    margin: 0;
+    height: 135px;
+    color: #fff;
+    font:normal 14px HelveticaNeueLight;
+}
+#container.paso3 p.reloj span {
+    display: block;
+    font:normal 25px HelveticaNeueCondensedBold;
+}
+
+#container.paso3 p.reloj a.contratalo {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FDA917),
+        color-stop(1, #FC7A08)
+    );
+    background-image: -o-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: -moz-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: -webkit-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: -ms-linear-gradient(bottom, #FDA917 0%, #FC7A08 100%);
+    background-image: linear-gradient(to bottom, #FDA917 0%, #FC7A08 100%);
+    height: 32px;
+    border: 1px solid #e49000;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    font:normal 18px HelveticaNeueCondensedBold;
+    letter-spacing: 1px;
+    display: block;
+    width: 175px;
+    text-decoration: none;
+    line-height: 32px;
+    margin: 10px 0 0 0;
+    background:url(../images/bg_ie.png) repeat-x top left;
+    border-radius:0 \9;
+}
+
+#container p.legal {
+    font-family: Arial;
+    font-size: 9px;
+    color: #fff;
+    background: #2a6285;
+    padding: 20px;
+    margin:0;
+}

@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<div ng-include="'partials/navbar.html'"></div>
+
+<div class="page-header">
+  <a href="#" download="informe.csv"data-ng-click="csv()" class="btn btn-primary pull-right">Exportar</a>
+  <h1>Participantes</h1>  
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>code</th>
+          <th>Nombre</th>
+          <th>email</th>
+          <th>patente</th>
+          <th>uid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-ng-repeat="c in contestants">
+          <td>{{ c.code }}</td>
+          <td>{{ c.firstName }} {{ c.lastName }}</td>
+          <td>{{ c.email }}</td>
+          <td>{{ c.patent }}</td>
+          <td>{{ c.uid }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
